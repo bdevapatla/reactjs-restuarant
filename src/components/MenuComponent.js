@@ -5,12 +5,14 @@ import {Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle} from 'reac
 class Menu extends Component {
     constructor(props) {
         super(props);        
-        console.log('Menu component constructor is invoked.')
+        console.log('Menu component constructor is invoked.');
     }
     componentDidMount() {
         console.log('Menu component componentDidMount is invoked.')
     }
-   
+    componentDidUpdate() {
+        console.log('Menu component componentDidUpdate is invoked.');
+    }
     
     render() {
         const menu = this.props.dishes.map((dish) => {

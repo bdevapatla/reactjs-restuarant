@@ -2,9 +2,19 @@ import React, { Component } from 'react';
 import {Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle} from 'reactstrap';
 
 export default class DishDetail  extends Component {
-    constructor(props) {
+    /*constructor(props) {
         super(props);
+        console.log('DishDetail component constructor is invoked.');
+    }*/
+
+    componentDidMount(){
+        console.log('Dish detail component componentDidMount is invoked');
     }
+
+    componentDidUpdate() {
+        console.log('Dish detail component componentDidUpdate is invoked');
+    }
+
     renderDish(dish) {
         return (
             <Card>
@@ -41,6 +51,7 @@ export default class DishDetail  extends Component {
 }
     
     render() {        
+            console.log('Dish detail component render method is invoked');
             if(this.props.dish != null) {
                 return (   
                     <div className="row">         
