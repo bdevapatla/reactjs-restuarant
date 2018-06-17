@@ -10,6 +10,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Contact  from './ContactComponent.js';
+import About from './AboutComponent.js';
 
 class Main extends Component {
 
@@ -46,6 +47,7 @@ class Main extends Component {
          <Header />
          <Switch>
               <Route path='/home' component={HomePage} />
+              <Route path='/aboutus' component={() => <About leaders={this.state.leaders} />} />
               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} onClick={()=>{console.log("onCLick is yet to be defined.");}} />} />
               <Route path='/menu/:dishId' component={DishWithId} />
               <Route exact path='/contactus' component={Contact} />
