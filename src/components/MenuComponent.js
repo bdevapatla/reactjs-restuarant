@@ -1,8 +1,7 @@
 import React from 'react'; 
 //Default export without curly braces and named export with curly braces
-import {Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem} from 'reactstrap';
+import {Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem} from 'reactstrap';
 import {Link} from 'react-router-dom';
-
 
     function RenderMenuItem({dish,onClick}) {
         return (
@@ -33,7 +32,7 @@ import {Link} from 'react-router-dom';
                             <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
                             <BreadcrumbItem active>Menu</BreadcrumbItem>
                         </Breadcrumb>
-                        <div class="col-12">
+                        <div className="col-12">
                             <h3>Menu</h3>
                             <hr />
                         </div>
